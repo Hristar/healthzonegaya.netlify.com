@@ -1,0 +1,189 @@
+html,
+body,
+header,
+nav,
+div,
+section,
+footer,
+span,
+p,
+a,
+li,
+ul,
+h1,
+h2,
+h3 {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  color: white;
+  overflow-x: hidden;
+  text-align: center;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+li,
+a,
+h1,
+p,
+span {
+  text-decoration: none;
+  list-style: none;
+  font-family: "Karla";
+}
+nav {
+  background: #0d586e;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+nav ul {
+  font-size: 25px;
+  display: flex;
+}
+nav li {
+  margin-left: 50px;
+}
+.open-btn {
+  width: 40px;
+  display: none;
+}
+.slide-menu {
+  background: rgb(58, 58, 58);
+  position: absolute;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100vh;
+  overflow: hidden;
+  padding-top: 20px;
+  transition: 500ms ease-in;
+}
+.slide-menu a {
+  display: block;
+  font-size: 30px;
+  margin: 40px 20px 20px 20px;
+}
+.close-btn {
+  position: absolute;
+  right: 0;
+  top: -20px;
+}
+section {
+  background: teal;
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+p {
+  font-size: 25px;
+  text-align: left;
+}
+span {
+  font-style: italic;
+  font-weight: 900;
+}
+.profile {
+  background: white;
+  width: 100px;
+  padding: 50px;
+  border-radius: 75px;
+}
+.text-box {
+  background: white;
+  padding: 20px;
+  border-left: 15px coral solid;
+  margin: 30px;
+}
+.text-box p {
+  margin: 30px 0;
+  color: teal;
+  font-size: 30px;
+}
+.info {
+  font-size: 40px;
+  margin-top: 50px;
+}
+.btn-area {
+  display: flex;
+  justify-content: space-around;
+}
+.btn {
+  height: 75px;
+  background: white;
+  width: 300px;
+  overflow: hidden;
+  margin-top: 50px;
+  border-radius: 30px;
+}
+.open-btn div {
+  width: 35px;
+  height: 6px;
+  display: block;
+  background: white;
+  margin-bottom: 6px;
+  border-radius: 10px;
+}
+.move {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.btn span {
+  color: black;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.move {
+  transform: translateY(-5px);
+  transition: 400ms;
+}
+footer {
+  background: #313131;
+  padding: 40px;
+  color: white;
+  font-size: 20px;
+}
+.another-logo {
+  display: none;
+}
+.move:hover {
+  transform: translateY(-75px);
+}
+footer p {
+  text-align: center;
+}
+@media screen and (max-width: 850px) {
+  .open-btn {
+    display: block;
+  }
+  nav li {
+    display: none;
+  }
+}
+@media screen and (max-width: 515px) {
+  .logo {
+    width: 230px;
+  }
+}
+@media screen and (max-width:360px) {
+  .another-logo {
+      display: block;
+  }
+  .logo {
+      display: none;
+  }
+  button {
+      width: 60%;
+  }
+}

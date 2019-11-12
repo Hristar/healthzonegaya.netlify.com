@@ -1,0 +1,220 @@
+html, body, header, nav, div, section, footer, span, p, a, li, ul, h1, h2, h3 {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    color: white;
+    overflow-x: hidden;
+}
+
+li, a, h1, p, span {
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Karla';
+}
+nav {
+    background: #0f728a;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around
+}
+nav ul {
+    font-size: 25px;
+    display: flex;
+}
+nav li {
+    margin-left: 50px;
+}
+.another-logo {
+    display: none;
+}
+.open-btn {
+    width: 40px;
+    display: none;
+}
+.slide-menu {
+    background: rgb(58, 58, 58);
+    position: absolute;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    overflow: hidden;
+    padding-top: 20px;
+    transition: 500ms ease-in;
+}
+.slide-menu a {
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    margin: 40px 20px 20px 20px;;
+}
+.close-btn {
+    position: absolute;
+    right: 0;
+    top: -20px;
+}
+h1 {
+    font-size: 45px
+}
+p {
+    margin: 80px 0 100px 0;
+    font-size: 30px;
+}
+.malnutrition {
+    background: url(../Images/wave.svg) repeat-x bottom, #0f728a;
+}
+.inactiveness {
+    background: url(../Images/bluewave.svg) repeat-x bottom, #A3CB38;
+}
+.inactiveness h1, .inactiveness p, .inactiveness a {
+    color: #026824;
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+    padding: 75px 50px;
+}
+.content a {
+    text-decoration: underline;
+}
+.content div {
+    width: 550px;
+}
+.content div.two {
+    text-align: center;
+}
+.sliding {
+    background: rgb(13, 41, 47);
+    height: 35px;
+    overflow: hidden;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 15px 40px;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+.sliding h1 {
+    margin-bottom: 20px;
+}
+.sliding-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+    background: #0f728a;
+}
+.sliding h1:nth-child(1) {
+    animation: slide 10s infinite ease-in-out alternate;
+}
+
+button {
+    font-size: 50px;
+    margin-top: 50px;
+    transition: 400ms ease;
+    padding: 10px 15px;
+    border-radius: 30px;
+}
+button a {
+    color: black;
+}
+.open-btn div{
+    width:35px;
+    height: 6px;
+    display: block;
+    background: white;
+    margin-bottom: 6px;
+    border-radius: 10px;
+}
+button:hover {
+    border: 1px solid #00000073;
+    border-bottom: 10px solid #00000073;
+    transform: rotateZ(5deg);
+    border-radius: 100px;
+    background: #b2f18e;
+}
+.address:hover {
+    background: #f1a2f1;
+    transform: rotateZ(-5deg);
+}
+footer {
+    background: #313131;
+    padding: 40px;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+@keyframes slide{
+    0% {margin-top: -8px}
+    20% {margin-top: -78px}
+    40% {margin-top: -152px}
+    60% {margin-top: -224px}
+    80% {margin-top: -295px}
+    100% {margin-top: -367px}
+}
+@keyframes move{
+    0% {margin-top: 3px}
+    100%{margin-top: -305px}
+}
+@media screen and (max-width:850px) {
+    .open-btn {
+        display: block;
+    }
+    nav li {
+        display: none;
+    }
+    .content img {
+        width: 250px;
+        text-align: center;
+    }
+    h1 {
+        font-size: 35px;
+    }
+    p {
+        font-size: 25px;
+    }
+}
+@media screen and (max-width:600px) {
+    .content {
+        flex-direction: column-reverse;
+        text-align: center;
+        width: 100%;
+        padding: 0;
+    }
+    .content img {
+        margin-top: 30px;
+    }
+    h1 {
+        font-size: 35px;
+    }
+    p {
+        font-size: 25px;
+    }
+    .content div {
+        width: 90%;
+        padding: 20px;
+    }
+    .logo {
+        width: 240px
+    }
+    .sliding {
+        width: 60%
+    }
+    .sliding h1 {
+        font-size: 4vh;
+    }
+    .sliding h1:nth-child(1) {
+        animation: move 12s infinite linear alternate;
+    }
+}
+@media screen and (max-width:360px) {
+    .another-logo {
+        display: block;
+    }
+    .logo {
+        display: none;
+    }
+    button {
+        width: 60%;
+    }
+}
