@@ -153,15 +153,18 @@ footer {
   padding: 40px;
   color: white;
   font-size: 20px;
+  text-align: center;
+}
+.connect {
+  display: flex;
+  margin: 20px 0;
+  justify-content: space-around;
 }
 .another-logo {
   display: none;
 }
 .move:hover {
   transform: translateY(-75px);
-}
-footer p {
-  text-align: center;
 }
 @media screen and (max-width: 850px) {
   .open-btn {
