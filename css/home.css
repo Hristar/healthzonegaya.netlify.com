@@ -214,7 +214,7 @@ footer {
         animation: move 12s infinite linear alternate;
     }
 }
-@media screen and (max-width:360px) {
+@media screen and (max-width:400px) {
     .another-logo {
         display: block;
     }
