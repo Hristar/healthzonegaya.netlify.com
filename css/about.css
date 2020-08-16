@@ -180,6 +180,12 @@ footer p {
   .logo {
     width: 230px;
   }
+  .info {
+    font-size: 25px;
+  }
+  p {
+    font-size: 22px;
+  }
 }
 @media screen and (max-width:360px) {
   .another-logo {
